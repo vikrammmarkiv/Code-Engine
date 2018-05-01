@@ -1,0 +1,36 @@
+
+public double sort(ArrayList<Double> list,String choice)
+    {
+        int i,j,len=list.size();
+        //creating array of same size as list
+        double arr[]=new double[len];        
+        double temp;
+        
+        for(i=0;i<len;i++)
+        arr[i]=list.get(i); //list converted to array
+        
+        for(i=0;i<len;i++)
+        {
+            for(j=0;j<len-1;j++)
+            { //traversing through the array i nuber of times                
+                if(choice.equals("descending")||choice.equals("default")&&arr[j]<arr[j+1])
+                { //swap only if user wants to sort in ascending order                  
+                        temp=arr[j];
+                        arr[j]=arr[j+1];
+                        arr[j+1]=temp;                    
+                }                
+                else if(choice.equals("ascending")&&arr[j]>arr[j+1])
+                {  //swap only if user wants to sort in ascending order                 
+                        temp=arr[j];
+                        arr[j]=arr[j+1];
+                        arr[j+1]=temp;                    
+                }
+            }
+        }
+        list.clear();
+        //finally put the sorted array back into the list
+        for(i=0;i<len;i++)
+        list.add(arr[i]);        
+        return 0;        
+    }
+	

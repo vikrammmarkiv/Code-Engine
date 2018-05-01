@@ -1,0 +1,7 @@
+
+public int StackPop(int arr[],int top)
+    {
+        if(isEmpty(top) )
+            throw new NoSuchElementException("Underflow Exception");        
+        return arr[top--]; 
+    }

@@ -1,0 +1,19 @@
+
+
+    public double random(ArrayList<Double> list)
+    {
+        //set default values
+        double min=0;
+        double max=100;
+        //check if there is a range to get from the list 
+        if(list.size()>1)
+        {
+            min=list.get(0);
+            max=list.get(1);
+        }
+        double range= (max-min)+1;
+        //generate a random number frome minimum to min + range and return it
+        int num=(int)(Math.random()*range)+(int)min;
+        return num;
+    }
+    

@@ -1,0 +1,5 @@
+
+public boolean StackIsEmpty(int top)
+    {
+        return top==-1;        
+    } 

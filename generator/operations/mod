@@ -1,0 +1,11 @@
+
+public double mod(ArrayList<Double> list)
+    {
+        //retrieve the two numbers from the list
+        double num1=list.get(0);
+        double num2=list.get(1);
+        //simply find the remainder of the two numbers and return it
+        double remainder= num1 % num2;;
+        return remainder;
+    }
+	

@@ -1,0 +1,11 @@
+
+public double divide(ArrayList<Double> A)
+    {
+        //retrieve values from the list
+        double dividend= A.get(0);
+        double divisor= A.get(1);
+        double quotient = dividend/divisor;
+        //simply divide and return it to main()
+        return quotient;
+    }
+	

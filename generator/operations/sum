@@ -1,0 +1,8 @@
+    
+public static int sum(ArrayList<Integer> list)
+    {
+        int sum=0;
+        for (int i:list)
+        sum+=(int)i;
+        return sum;
+    }

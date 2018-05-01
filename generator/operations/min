@@ -1,0 +1,14 @@
+
+public double min(ArrayList<Double> list)
+    {
+        //suppose the first element is minimum
+        double min=list.get(0);
+        //iterate throught the list
+        for(double i : list)
+        //check if there exists any smaller number
+        if(min>i)
+        min=i;
+        //return maximum number to main()
+        return min;       
+    }
+	

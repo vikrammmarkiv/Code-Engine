@@ -1,0 +1,11 @@
+
+public double subtraction(ArrayList<Double> list)
+    {
+        //get the operands sent in the list
+        double a= list.get(0);
+        double b= list.get(1);
+        //simply find the difference and return it to main()
+        double difference = a-b;
+        return difference;
+    }
+	

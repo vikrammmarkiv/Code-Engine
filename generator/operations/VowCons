@@ -1,0 +1,15 @@
+
+    public int VowCons(String str,char A)
+    {
+        str=str.toLowerCase();
+        int c=0,l = str.length();
+        for(int i = 0;i<l;i++)
+        {
+            char ch = str.charAt(i);
+            if(ch!='a'&&ch!='e'&&ch!='i'&&ch!='o'&&ch!='u')
+                c++;
+        }
+        if(A=='C'||A=='c')    
+        return c;
+        return l-c;
+    } 

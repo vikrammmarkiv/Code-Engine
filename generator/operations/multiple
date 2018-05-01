@@ -1,0 +1,24 @@
+
+public double multiple(ArrayList<Double> list)
+    {
+        double num=list.get(0);
+        double mul,N=10;
+        // printing "N" multiples of "nuum"
+        int len =list.size();
+        
+        if(len==2)   //check for user's input
+        N=list.get(1);
+        
+        list.clear();
+        System.out.println();
+        for(int i=2;i<=N;i++)
+        {
+            // each multiple stored in num
+            mul=i*num;
+            System.out.print(mul+"\n");
+            //add multiples to the list
+            list.add(i-2,mul);            
+        }
+        return 0;
+    } 
+	

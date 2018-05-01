@@ -1,0 +1,17 @@
+
+public double factorial(ArrayList<Double> list)
+    {
+        //to find the factorial of number "num"
+        double num=list.get(0);
+        
+        if(num==0||num==1)
+        //factorial of 0 and 1 is 1
+        return 1;
+        
+        double fact=1;
+        for(double i=1;i<=num;i++)
+        //factorial= 1 * 2 * 3 * .... (num-1),num
+        fact*=i;
+        return fact;
+    }
+	

@@ -1,0 +1,16 @@
+
+    public int anagram(String word, String ana)
+    { 
+       if(word.length() != ana.length())
+       return 0;           
+       char[] chars = word.toCharArray(); 
+       for(char c : chars)
+       { 
+         int index = ana.indexOf(c);
+         if(index != -1)
+         ana = ana.substring(0,index) + ana.substring(index +1, ana.length());
+         else
+         return 0 ; 
+        }
+       return 1;
+    } 

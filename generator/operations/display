@@ -1,0 +1,7 @@
+
+    public void display(ArrayList<String[]> list)
+    {       
+        System.out.print("\n");
+        for(int i=0;i<list.size();i++)
+        System.out.println("Result of "+list.get(i)[1]+" operation is "+list.get(i)[0]);
+    } 

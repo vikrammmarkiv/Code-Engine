@@ -1,0 +1,8 @@
+    
+	public double addition(ArrayList<Double> list)
+    {
+        double sum=0;
+        for (double i:list)
+        sum+=(double)i;
+        return sum;
+    }

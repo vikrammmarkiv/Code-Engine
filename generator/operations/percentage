@@ -1,0 +1,12 @@
+
+public double percentage(ArrayList<Double>list)
+    {
+        double num=list.get(0);
+        double perc=list.get(1);
+        //Finding "perc" percent of "num"
+        double answer=perc*num;
+        answer=answer/100;
+        //returning the answer to main()
+        return answer;
+    }
+	

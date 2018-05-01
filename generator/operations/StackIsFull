@@ -1,0 +1,5 @@
+
+   public static boolean StackIsFull(int top, int size)
+    {
+        return top==size-1;        
+    }

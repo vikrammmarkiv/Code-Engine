@@ -1,0 +1,8 @@
+
+    public void StackPush(int arr[], int top, int size, int item)
+    {
+        if(isFull(top,size))
+            throw new IndexOutOfBoundsException("Overflow Exception");
+        if(top + 1 < size )
+            arr[++top] = item;    
+    }

@@ -1,0 +1,11 @@
+
+public double power(ArrayList<Double> list)
+    {
+        //get the base and exp from the list
+        double base=list.get(0);
+        double exp=list.get(1);
+        //use pow func to find the power and return it to main()
+        double value = Math.pow(base,exp);
+        return value;
+    }
+	

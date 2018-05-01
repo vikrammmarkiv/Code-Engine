@@ -1,0 +1,14 @@
+
+public double max(ArrayList<Double> list)
+    {
+        //suppose the first element is max   
+        double max=list.get(0);
+        //iterate throught the list
+        for(double i : list)
+        //check if there exists any greater number
+        if(max<i)
+        max=i;
+        //return maximum number to main()
+        return max;       
+    } 
+	
